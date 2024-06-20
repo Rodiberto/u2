@@ -37,6 +37,8 @@
                 <div class="btn-group d-flex" role="group">
                     <button type="submit" name="operation" value="sum" class="btn btn-primary w-50">Suma</button>
                     <button type="submit" name="operation" value="sub" class="btn btn-secondary w-50">Resta</button>
+                    <button type="submit" name="operation" value="mul" class="btn btn-primary w-50">Multiplicación</button>
+                    <button type="submit" name="operation" value="div" class="btn btn-secondary w-50">División</button>
                 </div>
             </div>
         </form>
@@ -71,6 +73,12 @@
                     break;
                 case 'sub':
                     $result = $num1 - $num2;
+                    break;
+                case 'mul':
+                    $result = $num1 * $num2;
+                    break;
+                case 'div':
+                    $result = $num1 / $num2;
                     break;
                 default:
                     echo '<div class="alert alert-danger mt-3">Error: Operación no válida.</div>';
